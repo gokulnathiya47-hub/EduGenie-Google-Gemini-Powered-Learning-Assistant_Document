@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #eef0f5;
+    color: #1f2937;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+body > p {
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+form {
+    margin: 30px 0 16px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+form input[type="text"] {
+    width: 60%;
+    max-width: 480px;
+    padding: 12px 16px;
+    border: 1px solid #d7dbe0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+}
+
+form input[type="text"]:focus {
+    border-color: #4285f4;
+}
+
+button {
+    padding: 12px 22px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+button:disabled {
+    background-color: #9db4e6;
+    cursor: not-allowed;
+}
+
+.output {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    min-height: 20px;
+    text-align: left;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.output:empty {
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.output h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.loading {
+    color: #777;
+    font-style: italic;
+}
+
+.error-text {
+    color: #d93025;
+}
+
+/* Quiz specific styling */
+.quiz-question {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.quiz-question:last-of-type {
+    border-bottom: none;
+}
+
+.quiz-question p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0 0 8px;
+}
+
+.quiz-options label {
+    display: block;
+    margin: 10px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.98rem;
+    cursor: pointer;
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 8px;
+}
+
+.check-btn {
+    margin-left: 0;
+    margin-top: 6px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.feedback.correct {
+    color: #1e8e3e;
+}
+
+.feedback.incorrect {
+    color: #d93025;
+}
